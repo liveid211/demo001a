@@ -7,12 +7,12 @@ on:
 
 defaults:
   run:
-    working-directory: ./Application/GitHubActionsChallengeFunctionApp
+    working-directory: './Application'
 
 env:
   DOTNET_VERSION: 3.1.x
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' 
-  AZURE_FUNCTIONAPP_NAME: demo001101721fa
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: './Application' 
+  AZURE_FUNCTIONAPP_NAME: "demo001101721fa"
 
 jobs:
   build-and-deploy:
