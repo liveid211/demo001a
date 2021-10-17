@@ -2,13 +2,13 @@ name: Production CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main1 ]
   workflow_dispatch:
 
 env:
   DOTNET_VERSION: 3.1.x
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' 
-  AZURE_FUNCTIONAPP_NAME: <<prodfunctionappnamehere>>
+  AZURE_FUNCTIONAPP_NAME: demo001101721fa
 
 jobs:
   build-and-deploy:
