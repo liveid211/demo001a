@@ -5,13 +5,9 @@ on:
     branches: [ main1 ]
   workflow_dispatch:
 
-defaults:
-  run:
-    working-directory: './Application'
-
 env:
   DOTNET_VERSION: 3.1.x
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: './Application' 
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'Application/GitHubActionsChallengeFunctionApp' 
   AZURE_FUNCTIONAPP_NAME: "demo001101721fa"
 
 jobs:
