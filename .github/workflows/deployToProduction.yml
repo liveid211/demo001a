@@ -5,6 +5,10 @@ on:
     branches: [ main1 ]
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: ./Application
+
 env:
   DOTNET_VERSION: 3.1.x
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' 
